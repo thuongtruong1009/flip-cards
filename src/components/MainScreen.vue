@@ -1,5 +1,5 @@
 <template>
-  <h2>Play flip 3D card game</h2>
+  <h1>Play flip 3D card game</h1>
   <div class="actions">
     <button @click="onStart(16)">
       <span>4x4</span>
@@ -31,6 +31,10 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+h1{
+  font-family: 'Fredoka One', cursive;
+}
 .actions {
   display: flex;
   justify-content: center;

@@ -1,5 +1,5 @@
 <template>
-  <div class="card" v-bind:class="{disabled : isDisabled}">
+  <div class="card" :class="{disabled : isDisabled}">
     <div
       class="card-inner"
       :class="{ 'is-Focus': isFliped }"
@@ -14,7 +14,7 @@
           :style="{
             //backgroundImage: `url(${require('~/assets/' + imgBackFaceUrl)})`,
             //backgroundImage: `url('~/assets/' + imgBackFaceUrl)`,
-            backgroundImage: `url('/src/assets/${imgBackFaceUrl})`,
+            backgroundImage: `url('/src/assets/images/${imgBackFaceUrl})`,
           }"
         ></div>
       </div>

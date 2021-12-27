@@ -13,12 +13,16 @@
 }
 
 body {
-    background-image: url("../project/main_background.jpg");
+    background-image: url("@/assets/project/main_background.jpg");
+    /* background-image: url("https://images.unsplash.com/photo-1626775238053-4315516eedc9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cG9rZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"); */
     background-size: cover;
+    background-repeat: no-repeat;
     color: var(--light);
     font-family: var(--font);
+    user-select: none;
 }
 
 a {
     text-decoration: none;
+    color: var(--light);
 }

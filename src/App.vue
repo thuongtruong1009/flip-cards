@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import Copyright from "./components/CopyRight.vue";
-import MainScreen from "./components/MainScreen.vue";
-import InteractScreen from "./components/InteractScreen.vue";
-import { shuffer } from "./utils/array.js";
-import ResultScreen from "./components/ResultScreen.vue"
+import Copyright from "@/components/CopyRight.vue";
+import MainScreen from "@/components/MainScreen.vue";
+import InteractScreen from "@/components/InteractScreen.vue";
+import { shuffer } from "@/utils/array.js";
+import ResultScreen from "@/components/ResultScreen.vue"
 export default {
   name: "App",
   components: { Copyright, MainScreen, InteractScreen, ResultScreen },
