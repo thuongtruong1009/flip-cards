@@ -1,0 +1,24 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin-top: 60px;
+}
+
+:root {
+    --light: #f3f3f3;
+    --dark: #212121;
+    --font: 'Odibee Sans', cursive;
+}
+
+body {
+    background-image: url("../project/main_background.jpg");
+    background-size: cover;
+    color: var(--light);
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
