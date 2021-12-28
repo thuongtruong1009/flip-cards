@@ -6,7 +6,7 @@
       :cardContext="cardContext"
       :ref="`card-${index}`"
       :key="index"
-      :imgBackFaceUrl="`${card}.png'`"
+      :imgBackFaceUrl="`${card}.png`"
       :card="{ index, value: card }"
       @onFlip="checkRule($event)"
     />
@@ -45,7 +45,7 @@ export default {
 
         const disabledElements = document.querySelectorAll(".card.disabled");
 
-        if (disabledElements && (disabledElements.length === this.cardContext.length-2)) {
+        if (disabledElements && (disabledElements.length === this.cardContext.length - 2)) {
           setTimeout(() => {
             this.$emit("onFinish");
           }, 900)

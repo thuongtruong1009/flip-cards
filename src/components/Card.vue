@@ -14,7 +14,7 @@
           :style="{
             //backgroundImage: `url(${require('~/assets/' + imgBackFaceUrl)})`,
             //backgroundImage: `url('~/assets/' + imgBackFaceUrl)`,
-            backgroundImage: `url('/src/assets/images/${imgBackFaceUrl})`,
+            backgroundImage: `url('./src/assets/images/${imgBackFaceUrl}')`,
           }"
         ></div>
       </div>
