@@ -2,12 +2,11 @@
   <div>
     <h2>Playing game</h2>
     <Cardo
-      class="screen"
       v-for="(card, index) in cardContext"
       :cardContext="cardContext"
       :ref="`card-${index}`"
       :key="index"
-      :imgBackFaceUrl="`/images/${card}.png'`"
+      :imgBackFaceUrl="`${card}.png`"
       :card="{ index, value: card }"
       @onFlip="checkRule($event)"
     />
@@ -44,10 +43,9 @@ export default {
         this.$refs[`card-${this.rules[1].index}`].onDisabledMode();
         this.rules = [];
 
-        const disabledElements = document.querySelectorAll(".screen .card.disabled");
-        console.log(disabledElements);
+        const disabledElements = document.querySelectorAll(".card.disabled");
 
-        if (disabledElements && (disabledElements.length === this.cardContext.length-2)) {
+        if (disabledElements && (disabledElements.length === this.cardContext.length - 2)) {
           setTimeout(() => {
             this.$emit("onFinish");
           }, 900)
